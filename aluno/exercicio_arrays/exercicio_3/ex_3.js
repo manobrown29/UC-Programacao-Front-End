@@ -23,7 +23,5 @@ let pedidos = [
 ];
 
 console.log("Antes:", pedidos);
-
 adicionarPedido(pedidos, "0011");
-
 console.log("Depois:", pedidos);

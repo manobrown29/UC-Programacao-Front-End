@@ -1,5 +1,5 @@
-let fila = ["Ana", "Bruno", "Carlos"];
-fila.push("Daniel");
+let fila = ["João", "Maria", "josé"];
+fila.push("neide");
 
 console.log("Fila de atendimento:");
 for (let i = 0; i < fila.length; i++) {
@@ -9,7 +9,7 @@ for (let i = 0; i < fila.length; i++) {
 let atendido = fila.shift();
 
 console.log("Pessoa atendida:", atendido);
-console.log("Fila após atendimento:");
+console.log("== Fila após atendimento ==");
 for (let i = 0; i < fila.length; i++) {
     console.log(fila[i]);
 }
