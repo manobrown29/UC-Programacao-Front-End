@@ -5,4 +5,4 @@ function gerarTextoCompras(itens){
 }
 
 const resultado = gerarTextoCompras(lista);
-console.log(resultado); 
+console.log(resultado); ''
