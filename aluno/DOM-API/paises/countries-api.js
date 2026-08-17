@@ -12403,15 +12403,24 @@ const countries = [
 ];
 
 const paises = document.querySelector(".nomePais")
+const Continentes = ["América", "África"]
+
 
 for(let i = 0; i < countries.length; i++){
 	let div = document.createElement('div')
 	let h3 = document.createElement('h3')
 	let img = document.createElement('img')
 
+	div.classList.add("container")
+
 	h3.textContent = countries[i].id["ISO-3166-1-ALPHA-2"] + " - "  + countries[i].nome.abreviado + " " + `(${countries[i].localizacao.regiao.nome})`
-	img.src = `https://flagcdn.com/16x12/${countries[i].id["ISO-3166-1-ALPHA-2"].toLocaleLowerCase()}.png`
+	img.src = `https://flagcdn.com/w80/${countries[i].id["ISO-3166-1-ALPHA-2"].toLocaleLowerCase()}.png`
 	div.appendChild(h3)
 	div.appendChild(img)
 	paises.appendChild(div)
 }
+
+// ## 4. Filtro de continentes
+
+// Adicione um array no topo do seu script com os valores `["América", "África"]`. Exiba apenas os países destes continentes.
+// Conseguindo, altere os continentes na lista para validar que está funcionando adequadamente.
